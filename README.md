@@ -30,3 +30,23 @@ Then build and run the tests
 ```
 # ninja test
 ```
+
+## To collect coverage statistic
+
+First create the meson project with the `b_coverage=true` directive set
+```
+# meson -Db_coverage=true builddir && cd builddir
+```
+Then build and run the tests
+```
+# ninja test
+```
+Finally generate the coverage statistics:
+```
+# ninja coverage
+```
+```
+Xml  coverage report can be found at ./builddir/meson-logs/coverage.xml
+Text coverage report can be found at ./builddir/meson-logs/coverage.txt
+Html coverage report can be found at ./builddir/meson-logs/coveragereport/index.html
+```

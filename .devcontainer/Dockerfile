@@ -12,7 +12,8 @@ FROM mcr.microsoft.com/vscode/devcontainers/cpp:0-${VARIANT}
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends libgtest-dev google-mock git ninja-build python3-pip \
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* \
-    && pip3 install meson
+    && pip3 install meson \
+    && pip3 install gcovr
 
 # DEBIAN_FRONTEND=noninteractive
 # This is the anti-frontend. It never interacts with you  at  all,
