@@ -6,4 +6,4 @@ widget_tests = executable(
   : [ gtest_dep, thread_dep ])
 
 
-test('buffer_tests', widget_tests)
+test('widget_tests', widget_tests)
