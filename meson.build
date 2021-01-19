@@ -7,7 +7,9 @@ inc = []
 
 thread_dep = []
 # thread_dep = dependency('thread')
-gtest_dep = dependency('gtest')
+gtest_dep = dependency('gtest', main : true, required : true)
+gmock_dep = dependency('gmock', main : true, required : true)
+
 
 subdir('inc')
 subdir('src')

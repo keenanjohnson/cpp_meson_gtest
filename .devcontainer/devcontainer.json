@@ -22,7 +22,7 @@
 	"extensions": [
 		"ms-vscode.cpptools",
 		"asabil.meson",
-		"davidschuldenfrei.gtest-adapter"
+		"matepek.vscode-catch2-test-adapter"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
