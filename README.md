@@ -17,7 +17,6 @@ This is a very simple project using C++, meson/ninja as the build system and Goo
 │   └── meson.build
 └── tests
     ├── meson.build
-    ├── test_main.cpp
     └── widget_tests.cpp
 ```
 ## To build and run
